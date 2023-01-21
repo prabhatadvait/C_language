@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main(){
+    int arr[10];
+    int *ptr;
+    ptr = arr;
+    ptr = ptr+2;
+    if(ptr==&arr[2]){
+        printf("This point to the same location\n");
+    }
+    else{
+        printf("This do not point to the same location\n");
+    }
+    
+    return 0;
+}
